@@ -5,21 +5,21 @@
     <script src="https://ar-js-org.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam;">
+    <a-scene embedded arjs="sourceType: webcam; trackingMethod: best; debugUIEnabled: false;">
       
-      <!-- Marcador de imagen para la papelera -->
-      <a-marker type="pattern" url="papelera.jpeg">
-        <a-entity gltf-model="arrow.glb" scale="0.1 0.1 0.1" position="0 0 0" rotation="0 90 0"></a-entity>
+      <!-- Marcador para la papelera -->
+      <a-marker type="pattern" url="papelera.fset">
+        <a-entity gltf-model="flecha.glb" scale="0.1 0.1 0.1" position="0 0 0" rotation="0 90 0"></a-entity>
       </a-marker>
 
-      <!-- Marcador de imagen para la silla -->
-      <a-marker type="pattern" url="silla.jpeg">
-        <a-entity gltf-model="arrow.glb" scale="0.1 0.1 0.1" position="0 0 0" rotation="0 90 0"></a-entity>
+      <!-- Marcador para la silla -->
+      <a-marker type="pattern" url="silla.fset">
+        <a-entity gltf-model="flecha.glb" scale="0.1 0.1 0.1" position="0 0 0" rotation="0 90 0"></a-entity>
       </a-marker>
 
-      <!-- Marcador de imagen para el escritorio -->
-      <a-marker type="pattern" url="escritorio.jpeg">
-        <a-entity gltf-model="arrow.glb" scale="0.1 0.1 0.1" position="0 0 0" rotation="0 90 0"></a-entity>
+      <!-- Marcador para el escritorio -->
+      <a-marker type="pattern" url="escritorio.fset">
+        <a-entity gltf-model="flecha.glb" scale="0.1 0.1 0.1" position="0 0 0" rotation="0 90 0"></a-entity>
       </a-marker>
 
       <a-entity camera></a-entity>
